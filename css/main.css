@@ -1,32 +1,59 @@
 html {
-font-family: Merriweather, serif;
+  font-family: Merriweather, serif;
 }
 
-.calendar,
-td,
-th {
+table {
+  border-collapse: collapse;
+}
+
+th, td {
   border: 1px solid #ccc;
 }
 
 tbody td {
-  height: 11em;
+  height: 9.5em;
 }
 
-.event {
+main {
+  background-color: #fff;
+}
+
+.event-holiday {
+  color: #b92828;
+  background-color: #f2bcbc;
+  border: 1px solid #991919;
+  border-radius: 8px;
+}
+
+.event-notes {
+  color: #333;
   background-color: #f2f2f2;
   border: 1px solid #666;
   border-radius: 8px;
-  color: #333;
 }
 
-.event-earth {
+.event-notes-purple {
+  color: #38448e;
+  background-color: #d2d6f0;
+  border: 1px solid #1d38da;
+  border-radius: 8px;
+}
+
+.event-notes-green {
+  color: #6b7e54;
   background-color: #d1e0bf;
-  border-color: #6b7e54;
-  color: #51603f;
+  border: 1px solid #51603f;
+  border-radius: 8px;
 }
 
-.event-media {
-  background-color: #d2b6f0;
-  border-color: #b92828;
-  color: #991919;
+.day {
+  width: 6em;
+}
+
+@media only screen and (min-width: 60em) {
+
+  .table-wrapper {
+    overflow: visible;
+  }
+
 }
